@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://Car.dz/" xmlns:tns="http://Car.dz/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="genereFibo" type="tns:genereFibo"/>
+
+  <xs:element name="genereFiboResponse" type="tns:genereFiboResponse"/>
+
+  <xs:element name="normeTotale" type="tns:normeTotale"/>
+
+  <xs:element name="normeTotaleResponse" type="tns:normeTotaleResponse"/>
+
+  <xs:element name="setN" type="tns:setN"/>
+
+  <xs:element name="setNResponse" type="tns:setNResponse"/>
+
+  <xs:element name="setNorme1" type="tns:setNorme1"/>
+
+  <xs:element name="setNorme1Response" type="tns:setNorme1Response"/>
+
+  <xs:element name="setNorme2" type="tns:setNorme2"/>
+
+  <xs:element name="setNorme2Response" type="tns:setNorme2Response"/>
+
+  <xs:complexType name="setNorme1">
+    <xs:sequence>
+      <xs:element name="n1" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setNorme1Response">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="setN">
+    <xs:sequence>
+      <xs:element name="n2" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setNResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="setNorme2">
+    <xs:sequence>
+      <xs:element name="n2" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setNorme2Response">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="normeTotale">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="normeTotaleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="genereFibo">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="genereFiboResponse">
+    <xs:sequence/>
+  </xs:complexType>
+</xs:schema>
+
